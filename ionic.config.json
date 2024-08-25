@@ -1,0 +1,7 @@
+{
+  "name": "tiffin-wala",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
