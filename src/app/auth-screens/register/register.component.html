@@ -1,0 +1,42 @@
+<ion-content>
+  <ion-row>
+    <ion-col size="12" (click)="backToHome()">
+      <ion-img src="assets/imgs/backarrow.svg" alt="" class="backarrow"></ion-img>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="12" class="title">
+      <ion-label>Tiffin Wala</ion-label>
+    </ion-col>
+  </ion-row>
+  <ion-card id="card">
+    <ion-card-header>  
+      <ion-card-title>Create New Account</ion-card-title>  
+    </ion-card-header>
+    <div class="input-container">
+      <ion-label class="required-asterisk">*</ion-label>
+      <ion-input  label="" type="text" placeholder="Full name" formControlName="fullname"></ion-input>
+    </div>
+    <div class="input-container">
+      <ion-label class="required-asterisk">*</ion-label>
+      <ion-input  label=" " type="text" placeholder="Business name" formControlName="businessname"></ion-input>
+    </div>
+    <div class="input-container">
+      <ion-label class="required-asterisk">*</ion-label>
+      <ion-input label=" "  type="tel" placeholder="Mobile number" formControlName="mobilenumber"></ion-input>
+    </div>
+    <div class="checkbox">
+      <ion-checkbox labelPlacement="end">I accept privacy policy</ion-checkbox>
+    </div>
+    <ion-row>
+      <ion-col size="12" id="submitbtn">
+        <div class="button-container">
+          <ion-button expand="block" class="submit" id="btn" type="submit">
+            <ion-label>REGISTER</ion-label>
+            <!-- <ion-spinner name="lines-sharp" id="spinner" ></ion-spinner> -->
+          </ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>

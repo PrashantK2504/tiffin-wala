@@ -35,3 +35,250 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+
+@font-face {
+  font-family: 'Philosopher';
+  src: url('./assets/font/Philosopher/Philosopher-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Philosopher-Regular';
+  src: url('./assets/font/Philosopher/Philosopher-Regular.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'PoppinsSemibold';
+  src: url('./assets/font/Poppins/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Poppinsbold';
+  src: url('./assets/font/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'PoppinsRegular';
+  src: url('./assets/font/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'PoppinsLight';
+  src: url('./assets/font/Poppins/Poppins-Light.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'PoppinsMedium';
+  src: url('./assets/font/Poppins/Poppins-Medium.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url('./assets/font/Roboto/Roboto/Roboto-Medium.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'RobotoBold';
+  src: url('./assets/font/Roboto/Roboto/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('./assets/font/Roboto/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: bold;
+}
+
+:root {
+  --philosopher-font-family: 'Philosopher', sans-serif;
+  --philisopher-Regular:'Philosopher-Regular';
+  --custom-background-color: #161D6F;
+  --poppins-semibold: 'PoppinsSemibold';
+  --poppins-Regular: 'PoppinsRegular';
+  --poppinsLight: 'PoppinsLight';
+  --poppinsBold: 'Poppinsbold';
+  --poppinsMedium:'PoppinsMedium';
+  --robotoMedium: 'RobotoMedium';
+  --robotoBold:'RobotoBold';
+  --robotoRegular:'RobotoRegular';
+}
+
+*{
+  scroll-behavior: smooth;
+}
+
+//proposal list section
+
+ion-header {
+  #header {
+    --background: var(--custom-background-color);
+    color: white;
+    padding-top: 16px;
+    ion-segment {
+      padding-top: 6px;
+      font-size: 12px;
+      ion-segment-button {
+        font-size: 13.5px;
+        --color: #989898;
+        font-family: var(--poppins-Regular);
+        text-transform: capitalize;
+        --color-checked: #f5b622;
+        --indicator-height: 4px;
+      }
+    }
+  }
+  #propertyName {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  ion-icon {
+    font-size: 30px;
+  }
+  #search {
+    font-size: 22px;
+    padding-right: 10px;
+  }
+  #filter {
+    font-size: 22px;
+    color: #f5b622;
+  }
+}
+#proposaltitle {
+  font-size: 18px;
+  padding-left: 10px;
+  font-family: var(--poppins-Regular);
+}
+ion-content {
+  // --offset-bottom: auto !important;
+  // // --overflow: hidden;
+  // overflow: auto;
+  // &::-webkit-scrollbar {
+  //   width: 0px;
+  // }
+ #proposalhead {
+    padding: 7px 7px 0px 10px;
+    #jobsCount {
+      color: rgb(167, 167, 167);
+      font-size: 18.5px;
+    }
+    #proposalHeading {
+      font-size: 20px;
+      margin: 0 0px 0px 0px;
+      color: #161D6F;
+      font-family: var(--philosopher-font-family);
+    }
+    #propcount {
+      padding: 10.5px 0px 0px 0px;
+    }
+    #sortby {
+      padding: 0;
+      ion-label {
+        font-family: var(--poppins-Regular);
+      }
+      ion-item {
+        font-size: 15px;
+        font-family: var(--poppins-Regular);
+        ion-select {
+          font-family: var(--poppins-Regular);
+          ion-select-option {
+            font-family: var(--poppins-Regular);
+          }
+        }
+      }
+    }
+  }
+}
+
+#noresultFound{
+  width: 100%;
+  text-align: center;
+  color: rgb(165, 165, 165);
+  margin-top: 15px;
+  font-size: 18px;
+  font-family: var(--poppins-Regular);
+}
+
+.submit{
+  ion-label{
+    color: white;
+    font-family: var(--poppins-Regular);
+    font-size: 15px;
+  }
+}
+#btn{
+  --background: #f7b114;
+    margin: 0px;
+    border: none;
+    font-size: 0px;
+    width: 92%;
+    // float: center;
+    --box-shadow: none;
+    --border-radius: 50px;
+    min-height: 40px;
+}
+
+.backarrow {
+  width        : 41px;
+  height       : 41px;
+  margin       : auto;
+  margin-left  : 5px;
+  box-shadow   : 0px 2px 5px 0px #e6e6e6;
+  border-radius: 13px;
+  margin-top: 9px;
+}
+.title{
+  text-align: center;
+  font-size: 53px;
+  font-weight: 700;
+  color: #f7b114;
+  margin-bottom: 30px;
+  font-family: emoji;
+  background: white;
+}
+#card{
+  margin: 0 2vh;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  // box-shadow: 0 0 10px 0 var(--ion-color-medium);
+  ion-card-title{
+      font-family: var(--poppinsMedium);
+      text-align: center;
+      font-size: 16px;
+  }
+  ion-input{
+      margin-bottom: 10px;
+      margin-top: 1px;
+      font-family: var(--poppinsLight);
+      font-size: 16px;
+      color: #969696;
+      background: #f7f7f7;
+      // --highlight-color-focused: #0000d0;
+      border-radius: 20px;
+      --highlight-color: none;
+      min-height: 31px;
+      padding: 7px !important;
+      border: 1px solid #6f6f7440;
+      letter-spacing: 1px;
+      width: 91%;
+    }
+    .required-asterisk {
+      color: #ff4141cc;
+      margin: 0px 281px 7px 9px;
+      position: absolute;
+      z-index: 10;
+      font-size: 20px;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.input-container{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+}

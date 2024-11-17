@@ -1,0 +1,44 @@
+<ion-content [fullscreen]="true">
+
+  <div align="center" >
+    <img style="max-height: 145px;" src="assets/imgs/logo.png" />
+  </div>
+  <ion-row>
+    <ion-col size="12" class="title">
+      <ion-label>Tiffin Wala</ion-label>
+    </ion-col>
+  </ion-row>
+  
+  <ion-card id="card">
+    <ion-card-header>  
+      <ion-card-title>Login or SignUp</ion-card-title>  
+    </ion-card-header>
+    <div class="input-container">
+      <ion-input label="+91" type="tel" placeholder="Mobile Number" formControlName="mobileNumber"></ion-input>
+    </div>
+    
+    <ion-row>
+      <ion-col size="12" id="submitbtn">
+        <div class="button-container">
+          <ion-button expand="block" class="submit" id="btn" type="submit">
+            <ion-label>Continue</ion-label>
+            <!-- <ion-spinner name="lines-sharp" id="spinner" ></ion-spinner> -->
+          </ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-row style="margin-top: 5px;" (click)="goToRegister()">
+    <ion-col size="12" class="signup-text">
+     <strong> Become a tiffin service provider..? <a style="color: black;"><u>SIGN UP</u></a></strong>
+    </ion-col>
+  </ion-row>
+</ion-content>
+<ion-footer>
+  <ion-row >
+    <ion-col size="12" class="footer">
+      <ion-label>By continuing, you agree to our</ion-label><br>
+      <ion-label style="color: red !important;"><u>Terms & Conditions</u> | <u>Pricacy Policy</u>.</ion-label>
+    </ion-col>
+  </ion-row>
+</ion-footer>
